@@ -8,24 +8,38 @@
 
 #import "ViewController.h"
 #import "MyScene.h"
+@import AVFoundation;
+
+@interface ViewController ()
+@property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
+@end
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (void)viewWillLayoutSubviews
 {
-    [super viewDidLoad];
-
+    [super viewWillLayoutSubviews];
+    
+    NSError *error;
+    NSURL *roadrunnerTheme = [[NSBundle mainBundle] URLForResource:@"RoadrunnerTheme" withExtension:@"m4a"];
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:roadrunnerTheme error:&error];
+    self.backgroundMusicPlayer.numberOfLoops = -1;
+    [self.backgroundMusicPlayer prepareToPlay];
+    [self.backgroundMusicPlayer play];
+    
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
-    
-    // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
-    [skView presentScene:scene];
+    if (!skView.scene) {
+        skView.showsFPS = YES;
+        skView.showsNodeCount = YES;
+        
+        // Create and configure the scene.
+        SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        
+        // Present the scene.
+        [skView presentScene:scene];
+    }
 }
 
 - (BOOL)shouldAutorotate

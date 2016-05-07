@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482F32E61872436200C38837 /* beep_beep.png in Resources */ = {isa = PBXBuildFile; fileRef = 482F32E51872436200C38837 /* beep_beep.png */; };
+		482F32EA18726A8A00C38837 /* RoadrunnerTheme.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 482F32E918726A8A00C38837 /* RoadrunnerTheme.m4a */; };
 		48D04FF9186E3CCF001DC631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D04FF8186E3CCF001DC631 /* Foundation.framework */; };
 		48D04FFB186E3CCF001DC631 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D04FFA186E3CCF001DC631 /* CoreGraphics.framework */; };
 		48D04FFD186E3CCF001DC631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D04FFC186E3CCF001DC631 /* UIKit.framework */; };
@@ -24,6 +26,7 @@
 		48D05021186E3CCF001DC631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D04FFC186E3CCF001DC631 /* UIKit.framework */; };
 		48D05029186E3CCF001DC631 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48D05027186E3CCF001DC631 /* InfoPlist.strings */; };
 		48D0502B186E3CCF001DC631 /* ToonAnimaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D0502A186E3CCF001DC631 /* ToonAnimaterTests.m */; };
+		48D05035186E3EE5001DC631 /* ToonImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 48D05034186E3EE5001DC631 /* ToonImages.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		482F32E51872436200C38837 /* beep_beep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beep_beep.png; sourceTree = "<group>"; };
+		482F32E918726A8A00C38837 /* RoadrunnerTheme.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = RoadrunnerTheme.m4a; sourceTree = "<group>"; };
 		48D04FF5186E3CCF001DC631 /* ToonAnimater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToonAnimater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D04FF8186E3CCF001DC631 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48D04FFA186E3CCF001DC631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +65,7 @@
 		48D05026186E3CCF001DC631 /* ToonAnimaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToonAnimaterTests-Info.plist"; sourceTree = "<group>"; };
 		48D05028186E3CCF001DC631 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		48D0502A186E3CCF001DC631 /* ToonAnimaterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToonAnimaterTests.m; sourceTree = "<group>"; };
+		48D05034186E3EE5001DC631 /* ToonImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ToonImages.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 		48D05001186E3CCF001DC631 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48D05034186E3EE5001DC631 /* ToonImages.atlas */,
+				482F32E51872436200C38837 /* beep_beep.png */,
+				482F32E918726A8A00C38837 /* RoadrunnerTheme.m4a */,
 				48D05002186E3CCF001DC631 /* ToonAnimater-Info.plist */,
 				48D05003186E3CCF001DC631 /* InfoPlist.strings */,
 				48D05006186E3CCF001DC631 /* main.m */,
@@ -241,7 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D05005186E3CCF001DC631 /* InfoPlist.strings in Resources */,
+				48D05035186E3EE5001DC631 /* ToonImages.atlas in Resources */,
 				48D05018186E3CCF001DC631 /* Images.xcassets in Resources */,
+				482F32E61872436200C38837 /* beep_beep.png in Resources */,
+				482F32EA18726A8A00C38837 /* RoadrunnerTheme.m4a in Resources */,
 				48D05016186E3CCF001DC631 /* Spaceship.png in Resources */,
 				48D0500E186E3CCF001DC631 /* Main.storyboard in Resources */,
 			);
@@ -478,6 +490,7 @@
 				48D05030186E3CCF001DC631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48D05031186E3CCF001DC631 /* Build configuration list for PBXNativeTarget "ToonAnimaterTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +499,7 @@
 				48D05033186E3CCF001DC631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
